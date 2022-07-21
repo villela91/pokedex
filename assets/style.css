@@ -8,7 +8,7 @@
 }
 body {
     text-align: center;
-    background: linear-gradient(to bottom, #6ab7f5, #fff);
+    background: linear-gradient(to bottom, #6ab7f5, rgb(170, 78, 2));
     min-height: 100vh;
   }
   
@@ -23,7 +23,14 @@ body {
     width: 100%;
     max-width: 425px;
   }
-  
+  .pokemon_description{
+    position: absolute;
+    bottom: 55%;
+    font-size:1.7vh;
+    left: 50%;
+    transform: translate(-63%, 20%);
+    height: 21%;
+  }
   .pokemon__image {
     position: absolute;
     bottom: 55%;
@@ -31,14 +38,28 @@ body {
     transform: translate(-63%, 20%);
     height: 21%;
   }
-  
+  .pokemon__type{
+    position: absolute;
+    color: rgb(0, 0, 0);
+    top: 1.9vh;
+    right: 1.3vh;
+    
+  }
+ 
+  .pokemon__type2{
+    position: absolute;
+    color: rgb(0, 0, 0);
+    top: 3.9vh;
+    right: 1.3vh;
+  }
   .pokemon__data {
     position: absolute;
     font-weight: 600;
-    color: rgb(0, 0, 0);
+    color: rgb(7, 4, 4);
     top: 54.5%;
     right: 27%;
-    font-size: clamp(8px, 1.1vw, 25px);
+    
+    font-size: clamp(8px, 0.7vw, 21.1vw);
   }
   
   .pokemon__name {
@@ -67,12 +88,12 @@ body {
   
   .buttons {
     position: absolute;
-    bottom: 10%;
-    left: 50%;
-    width: 65%;
+    bottom: 7vh;
+    left: 32vh;
+    width: 45vh;
     transform: translate(-57%, 0);
     display: flex;
-    gap: 20px;
+    gap: 0.9vh;
   }
   
   .button {
@@ -80,7 +101,7 @@ body {
     padding: 4%;
     border: 2px solid #000;
     border-radius: 5px;
-    font-size: clamp(8px, 5vw, 1rem);
+    font-size: clamp(1vh, 2vh, 2vh);
     font-weight: 600;
     color: #3a444d;
     background-color: rgb(245, 237, 237);;
@@ -91,3 +112,4 @@ body {
     box-shadow: inset -4px 4px 0 #222;
     font-size: 0.9rem;
   }
+  
