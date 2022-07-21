@@ -25,6 +25,8 @@ body {
   }
   .pokemon_description{
     position: absolute;
+    color: rgb(0, 0, 0);
+    /* background-color: aliceblue; */
     bottom: 55%;
     font-size:1.7vh;
     left: 50%;
@@ -37,6 +39,7 @@ body {
     left: 50%;
     transform: translate(-63%, 20%);
     height: 21%;
+    display: unset;
   }
   .pokemon__type{
     position: absolute;

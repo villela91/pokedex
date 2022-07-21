@@ -62,21 +62,29 @@ buttonPrev.addEventListener('click', () => {
   if (searchPokemon > 1) {
     searchPokemon -= 1;
     renderPokemon(searchPokemon);
+    pokemonDescription.innerText ="";
   }
 });
 
 buttonNext.addEventListener('click', () => {
   searchPokemon += 1;
   renderPokemon(searchPokemon);
+  pokemonDescription.innerText ="";
 });
 
 
 
 async function description(){
-  pokemonImage.style.display = 'none';
+  if(pokemonDescription.innerText.length == 0) {
+
+    pokemonImage.style.display = 'none';
     const APIDes = await fetch(`https://pokeapi.co/api/v2/pokemon-species/${pokemonNumber.innerText}`);
     const dataDes = await APIDes.json();
-    pokemonDescription.innerText = dataDes.flavor_text_entries[7].flavor_text;  
-console.log(dataDes)
+    pokemonDescription.innerText = dataDes.flavor_text_entries[7].flavor_text; 
+  }else if(pokemonDescription.innerText.length >0){
+    pokemonImage.style.display = 'unset';
+    pokemonDescription.innerText ="";
+  }
+
 }
 renderPokemon(searchPokemon);
