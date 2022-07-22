@@ -14,24 +14,26 @@ body {
   
   main {
     display: inline-block;
-    margin-top: 2%;
+    margin-top: 2vh;
     padding: 15px;
     position: relative;
   }
   
   .pokedex {
-    width: 100%;
+    width: 100vh;
     max-width: 425px;
   }
   .pokemon_description{
     position: absolute;
     color: rgb(0, 0, 0);
-    top:21.4vh;
-    bottom: 50vh;
+    top:26vh;
+    padding-top: 10px;
     font-size:1.4vh;
-    left: 32vh;
+    text-align:center;
+    left: 34vh;
     transform: translate(-20vh, 3.9vh);
-    height: 19vh;
+    height: 22vh;
+    border-radius: 8px;
     /* display:flex; */
   }
   .pokemon_description {
@@ -107,12 +109,12 @@ body {
   }
   
   .button {
-    width: 50%;
-    padding: 4%;
+    width: 50vh;
+    padding: 2vh;
     border: 2px solid #000;
-    border-radius: 5px;
+    border-radius: 5vh;
     font-size: clamp(1vh, 2vh, 2vh);
-    font-weight: 600;
+    font-weight: 6  00;
     color: #3a444d;
     background-color: rgb(245, 237, 237);;
     box-shadow: -3px 4px 0 #888, -5px 7px 0 #333
